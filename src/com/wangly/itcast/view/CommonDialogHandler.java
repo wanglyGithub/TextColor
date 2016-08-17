@@ -1,4 +1,4 @@
-package com.example.textviewcolor.view;
+package com.wangly.itcast.view;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -11,7 +11,8 @@ import android.util.Log;
 import android.widget.TextView;
 
 import com.example.textviewcolor.R;
-import com.example.textviewcolor.view.CommonDialog.CallBackListener;
+import com.wangly.itcast.listener.DialogShowContent;
+import com.wangly.itcast.view.CommonDialog.CallBackListener;
 
 /**
  * Created by wangly on 2016/7/22.

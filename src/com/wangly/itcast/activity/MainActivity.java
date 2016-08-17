@@ -1,30 +1,22 @@
-package com.example.textviewcolor;
-
-import com.example.textviewcolor.view.CommonDialogHandler;
-import com.example.textviewcolor.view.CommonDialogHandler.ResultCallBack;
+package com.wangly.itcast.activity;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.text.Spannable;
-import android.text.SpannableStringBuilder;
-import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+
+import com.example.textviewcolor.R;
+import com.wangly.itcast.view.CommonDialogHandler;
+import com.wangly.itcast.view.CommonDialogHandler.ResultCallBack;
 
 public class MainActivity extends Activity implements ResultCallBack {
 
-	private TextView tv_info;
-	private EditText et_phone;
 	private CommonDialogHandler dialogHandler; 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		initView();
 
 		String reusltString = "初始密码为【20958】";
 
@@ -39,7 +31,6 @@ public class MainActivity extends Activity implements ResultCallBack {
 		dialogHandler.setHintTitle("注册成功");
 		dialogHandler.setContentText(reusltString);
 		dialogHandler.setColorText(teString);
-		et_phone = (EditText) findViewById(R.id.et_phone);
 		Button start = (Button) findViewById(R.id.start);
 		start.setOnClickListener(new View.OnClickListener() {
 
@@ -65,10 +56,6 @@ public class MainActivity extends Activity implements ResultCallBack {
 		}
 	}
 
-	private void initView() {
-
-		tv_info = (TextView) findViewById(R.id.tv_info);
-	}
 
 
 	@Override

@@ -1,4 +1,4 @@
-package com.example.textviewcolor.view;
+package com.wangly.itcast.view;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -8,10 +8,8 @@ import android.widget.TextView;
 import com.example.textviewcolor.R;
 
 /**
- * 统一样式的Dialog
- * 
- * @author wangly
- * 
+ /**
+ * Created by wangly on 2016/7/22.
  */
 public class CommonDialog extends Dialog implements
 android.view.View.OnClickListener {
